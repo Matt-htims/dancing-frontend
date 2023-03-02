@@ -13,12 +13,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 className="text-xl">Hi there</h1>
-        <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-          hi
-        </button>
-      </main>
+      <div className="h-screen bg-background">
+        <main className="m-[30px] rounded-[20px] bg-main text-center">
+          <h1 className="">Hi there</h1>
+        </main>
+      </div>
     </>
   )
 }
