@@ -20,6 +20,19 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontSize: {
+      sm: ['14px', '16px'],
+      base: ['16px', '20px'],
+      lg: ['20px', '20px'],
+      xl: ['30px', '30px'],
+      '2xl': ['40px', '40px'],
+      '3xl': ['50px', '50px'],
+      '4xl': ['70px', '70px'],
+      '5xl': ['90px', '90px'],
+      '6xl': ['110px', '110px'],
+      '7xl': ['130px', '130px'],
+      '8xl': ['150px', '130px'],
+    },
     extend: {
       colors: {
         background,
