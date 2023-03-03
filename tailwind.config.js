@@ -3,8 +3,9 @@
 // Fonts
 
 // Colors
-const background = '#F5F5F5'
+const background = '#F9F3EA'
 const offWhite = '#FBF2EA'
+const dark = '#6F3B47'
 const ripeMelon = '#FDB2A6'
 const sonomaSunset = '#F57A73'
 const screamingConfetti = '#E8EC7A'
@@ -34,9 +35,13 @@ module.exports = {
       '8xl': ['150px', '130px'],
     },
     extend: {
+      maxWidth: {
+        site: '1300px',
+      },
       colors: {
         background,
         offWhite,
+        black: dark,
         main: sonomaSunset,
         secondary: ripeMelon,
         blue: dreamyBlue,

@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Variables */
+:root {
+  /* Fonts */
+  /* --accentFont: 'Playfair Display', serif;
+	--mainFont: 'Poppins', sans-serif; */
+
+  /* Colours */
+  --background: #f9f3ea;
+  --offWhite: #fbf2ea;
+  --black: #6f3b47;
+  --main: #f57a73;
+  --secondary: #fdb2a6;
+  --blue: #e8ec7a;
+  --yellow: #9faed4;
+}
+
+html,
+body {
+  font-weight: 700;
+  color: var(--offWhite);
+  text-transform: uppercase;
+}
