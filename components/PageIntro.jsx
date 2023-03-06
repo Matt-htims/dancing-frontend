@@ -22,43 +22,43 @@ export default function PageIntro() {
           className={`pr-[${letter.rightPadding}]`}
         />
       ))} */}
-      <div>
+      <motion.div>
         <img
           src="./landing/D.svg"
           alt="D"
           className="w-[140.45px] pr-[0.24%]"
         />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div animate={{ y: 50 }}>
         <img src="./landing/A.svg" alt="A" className="w-[179px] pr-[8.76%]" />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div animate={{ y: -50 }}>
         <img
           src="./landing/N1.svg"
           alt="N"
           className=" w-[183.57px] pr-[15%]"
         />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div animate={{ y: 50 }}>
         <img
           src="./landing/C.svg"
           alt="C"
           className="w-[158.68px] pr-[20.55%]"
         />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div animate={{ y: -50 }}>
         <img src="./landing/I.svg" alt="I" className="w-[63.81px] pr-[43%]" />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div animate={{ y: 50 }}>
         <img
           src="./landing/N2.svg"
           alt="N"
           className="w-[183.61px] pr-[15.13%]"
         />
-      </div>
-      <div>
+      </motion.div>
+      <motion.div>
         <img src="./landing/G.svg" alt="G" className="w-[170.87px]" />
-      </div>
+      </motion.div>
     </div>
   )
 }
