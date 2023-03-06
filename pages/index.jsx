@@ -38,7 +38,7 @@ export default function Home() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="m-auto max-w-site text-8xl"
+            className="m-auto mt-36 max-w-site text-8xl"
           >
             You can't drink wine when your mouth is full of adjectives.
           </motion.h1>
