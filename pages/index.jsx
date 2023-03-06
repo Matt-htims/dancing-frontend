@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
 import { useState } from 'react'
 
 // Components
@@ -12,16 +12,18 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
 
   return (
-    <>
+    <AnimatePresence>
       {loading ? (
-        <Loader setLoading={setLoading} />
+        <motion.div key="loader">
+          <Loader setLoading={setLoading} />
+        </motion.div>
       ) : (
         <main className="m-[30px] overflow-hidden rounded-[20px] bg-main text-center">
           <PageIntro />
 
-          <h1 className="m-auto max-w-site text-8xl">
+          <motion.h1 className="m-auto max-w-site text-8xl">
             You can't drink wine when your mouth is full of adjectives.
-          </h1>
+          </motion.h1>
           <div className="falling-section bg-gradient-to-b from-main to-black pt-[1000px] pb-64">
             <h2 className="mb-32 text-2xl">
               We're all just trying to find ways to say,
@@ -31,6 +33,6 @@ export default function Home() {
           </div>
         </main>
       )}
-    </>
+    </AnimatePresence>
   )
 }
