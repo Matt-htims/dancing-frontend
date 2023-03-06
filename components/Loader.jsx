@@ -36,21 +36,23 @@ export default function Loader({ setLoading }) {
     return () => clearTimeout(timer)
   })
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="show"
-      className="flex h-[60vh] items-center justify-center  text-offWhite"
-    >
-      {letters.map((letter) => (
-        <motion.p
-          variants={item}
-          key={letter}
-          className="text-[280px] font-bold"
-        >
-          {letter}
-        </motion.p>
-      ))}
-    </motion.div>
+    <main className="m-[30px] h-[calc(100vh-59px)] overflow-hidden rounded-[20px] bg-secondary text-center">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex h-[60vh] items-center justify-center  text-offWhite"
+      >
+        {letters.map((letter) => (
+          <motion.p
+            variants={item}
+            key={letter}
+            className="text-[280px] font-bold"
+          >
+            {letter}
+          </motion.p>
+        ))}
+      </motion.div>
+    </main>
   )
 }
