@@ -4,6 +4,7 @@ import Image from 'next/image'
 // Components
 import PageIntro from '@/components/PageIntro'
 import Form from '@/components/Form'
+import Loader from '@/components/Loader'
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       </Head>
 
       <main className="m-[30px] overflow-hidden rounded-[20px] bg-main text-center">
+        <Loader />
+
         <PageIntro />
 
         <h1 className="m-auto max-w-site text-8xl">
