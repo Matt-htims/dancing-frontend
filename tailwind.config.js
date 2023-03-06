@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-// Fonts
-
 // Colors
 const background = '#F9F3EA'
 const offWhite = '#FBF2EA'
@@ -21,6 +19,9 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-futura-passata)'],
+    },
     fontSize: {
       sm: ['14px', '16px'],
       base: ['16px', '20px'],
