@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const letters = ['D', 'A', 'N', 'C', 'I', 'N', 'G']
@@ -18,7 +17,7 @@ const container = {
     backgroundColor: '#F57A73',
     height: '2000px',
     transition: {
-      duration: 1,
+      duration: 2,
     },
   },
 }
@@ -36,7 +35,7 @@ const itemDown = {
     opacity: 0.1,
     transition: {
       ease: 'easeInOut',
-      duration: 1,
+      duration: 2,
     },
   },
 }
@@ -54,7 +53,7 @@ const itemUp = {
     opacity: 0.1,
     transition: {
       ease: 'easeInOut',
-      duration: 1,
+      duration: 2,
     },
   },
 }
@@ -72,7 +71,20 @@ const itemFade = {
     opacity: 0.1,
     transition: {
       ease: 'easeInOut',
-      duration: 1,
+      duration: 2,
+    },
+  },
+}
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 50 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: 'easeInOut',
+      duration: 2,
+      delay: 3,
     },
   },
 }
@@ -135,6 +147,14 @@ export default function Loader({ setLoading }) {
             <img src="./landing/G.svg" alt="G" className="w-[170.87px]" />
           </motion.div>
         </div>
+        <motion.h1
+          variants={fadeIn}
+          initial="hidden"
+          animate="show"
+          className="m-auto mt-36 max-w-site text-8xl"
+        >
+          You can't drink wine when your mouth is full of adjectives.
+        </motion.h1>
       </motion.main>
     </div>
   )
