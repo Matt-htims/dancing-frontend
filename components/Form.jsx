@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div className="m-auto max-w-site space-y-16">
+    <div className="z-50 m-auto max-w-site space-y-16 pb-20">
       <div className="space-y-5 text-secondary">
         <p>
           Dancing is a mother-daughter vineyard in Sonoma. Our debut expression

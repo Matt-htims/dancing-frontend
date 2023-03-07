@@ -14,7 +14,7 @@ const letterSVGs = [
 
 export default function PageIntro() {
   return (
-    <div className="flex items-center justify-center pt-[32vh] text-offWhite opacity-10">
+    <div className="relative z-50 flex items-center justify-center bg-main pb-32 pt-[32vh] text-offWhite">
       {/* {letterSVGs.map((letter) => (
         <img
           key={letter}
@@ -22,41 +22,41 @@ export default function PageIntro() {
           className={`pr-[${letter.rightPadding}]`}
         />
       ))} */}
-      <motion.div>
+      <motion.div className="opacity-10">
         <img
           src="./landing/D.svg"
           alt="D"
           className="w-[140.45px] pr-[0.24%]"
         />
       </motion.div>
-      <motion.div animate={{ y: 50 }}>
+      <motion.div className="opacity-10" animate={{ y: 50 }}>
         <img src="./landing/A.svg" alt="A" className="w-[179px] pr-[8.76%]" />
       </motion.div>
-      <motion.div animate={{ y: -50 }}>
+      <motion.div className="opacity-10" animate={{ y: -50 }}>
         <img
           src="./landing/N1.svg"
           alt="N"
           className=" w-[183.57px] pr-[15%]"
         />
       </motion.div>
-      <motion.div animate={{ y: 50 }}>
+      <motion.div className="opacity-10" animate={{ y: 50 }}>
         <img
           src="./landing/C.svg"
           alt="C"
           className="w-[158.68px] pr-[20.55%]"
         />
       </motion.div>
-      <motion.div animate={{ y: -50 }}>
+      <motion.div className="opacity-10" animate={{ y: -50 }}>
         <img src="./landing/I.svg" alt="I" className="w-[63.81px] pr-[43%]" />
       </motion.div>
-      <motion.div animate={{ y: 50 }}>
+      <motion.div className="opacity-10" animate={{ y: 50 }}>
         <img
           src="./landing/N2.svg"
           alt="N"
           className="w-[183.61px] pr-[15.13%]"
         />
       </motion.div>
-      <motion.div>
+      <motion.div className="opacity-10">
         <img src="./landing/G.svg" alt="G" className="w-[170.87px]" />
       </motion.div>
     </div>

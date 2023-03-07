@@ -20,7 +20,7 @@ export default function Loader({ setLoading }) {
         onAnimationComplete={() => setLoading(false)}
         className="m-[30px] h-[calc(100vh-59px)] overflow-hidden rounded-[20px] bg-secondary text-center"
       >
-        <div className=" flex items-center justify-center pt-[32vh]  text-offWhite">
+        <div className=" flex items-center justify-center pt-[32vh] pb-32 text-offWhite">
           <motion.div variants={itemFade}>
             <img
               src="./landing/D.svg"
@@ -71,7 +71,7 @@ export default function Loader({ setLoading }) {
           variants={fadeIn}
           initial="hidden"
           animate="show"
-          className="m-auto mt-36 max-w-site text-8xl"
+          className="m-auto mt-4 max-w-site text-8xl"
         >
           You can't drink wine when your mouth is full of adjectives.
         </motion.h1>
