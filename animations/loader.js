@@ -5,7 +5,8 @@ export const container = {
   show: {
     opacity: 1,
     transition: {
-      duration: 1,
+      when: 'beforeChildren',
+      duration: 0.5,
       ease: 'easeInOut',
     },
   },
@@ -79,8 +80,8 @@ export const fadeIn = {
     y: 0,
     transition: {
       ease: 'easeInOut',
-      duration: 2,
-      delay: 3,
+      duration: 1.8,
+      delay: 3.7,
     },
   },
 }
