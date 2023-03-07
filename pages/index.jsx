@@ -7,19 +7,6 @@ import { useState } from 'react'
 import PageIntro from '@/components/PageIntro'
 import Form from '@/components/Form'
 import Loader from '@/components/Loader'
-import PageIntro2 from '@/components/PageIntro2'
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 200 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: 'easeInOut',
-      duration: 0.8,
-    },
-  },
-}
 
 export default function Home() {
   const [loading, setLoading] = useState(true)

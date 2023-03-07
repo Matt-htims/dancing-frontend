@@ -1,93 +1,13 @@
 import { motion } from 'framer-motion'
 
-const letters = ['D', 'A', 'N', 'C', 'I', 'N', 'G']
-
-const container = {
-  hidden: {
-    opacity: 1,
-  },
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    backgroundColor: '#F57A73',
-    height: '2000px',
-    transition: {
-      duration: 2,
-    },
-  },
-}
-
-const itemDown = {
-  hidden: { y: 0 },
-  show: {
-    y: 50,
-    transition: {
-      duration: 3,
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    opacity: 0.1,
-    transition: {
-      ease: 'easeInOut',
-      duration: 2,
-    },
-  },
-}
-
-const itemUp = {
-  hidden: { y: 0 },
-  show: {
-    y: -50,
-    transition: {
-      duration: 3,
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    opacity: 0.1,
-    transition: {
-      ease: 'easeInOut',
-      duration: 2,
-    },
-  },
-}
-
-const itemFade = {
-  hidden: { y: 0 },
-  show: {
-    y: 0,
-    transition: {
-      duration: 3,
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    opacity: 0.1,
-    transition: {
-      ease: 'easeInOut',
-      duration: 2,
-    },
-  },
-}
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 50 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: 'easeInOut',
-      duration: 2,
-      delay: 3,
-    },
-  },
-}
+// Animations
+import {
+  container,
+  itemDown,
+  itemUp,
+  itemFade,
+  fadeIn,
+} from '@/animations/loader.js'
 
 export default function Loader({ setLoading }) {
   return (
