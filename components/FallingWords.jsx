@@ -72,9 +72,25 @@ const fallContainer = {
   show: {
     opacity: 1,
     transition: {
-      when: 'afterChildren',
+      when: 'beforeChildren',
       staggerChildren: 0.3,
-      duration: 1,
+      duration: 4,
+    },
+  },
+}
+
+const fallSpring = {
+  hidden: {
+    y: -3000,
+  },
+  show: {
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 100,
+      mass: 100,
+      stiffness: 30,
+      //   duration: 5,
     },
   },
 }
@@ -86,11 +102,8 @@ const fall = {
   show: {
     y: 0,
     transition: {
-      type: 'spring',
-      damping: 30,
-      mass: 400,
-      stiffness: 100,
-      //   duration: 5,
+      ease: 'easeInOut',
+      duration: 10,
     },
   },
 }
