@@ -13,15 +13,6 @@ const rotateValues = [
   '-rotate-12',
 ]
 
-const bottomValues = [
-  'bottom-0',
-  'bottom-2',
-  'bottom-4',
-  'bottom-6',
-  'bottom-8',
-  'bottom-10',
-]
-
 const leftMarginValues = [
   'left-auto',
   'left-auto',
@@ -73,64 +64,8 @@ const words = [
   'Bright',
 ]
 
-const fallContainer = {
-  hidden: {
-    opacity: 1,
-    transition: {},
-  },
-  show: {
-    opacity: 1,
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.3,
-      duration: 0,
-    },
-  },
-}
-
-const fallSpring = {
-  hidden: {
-    y: -3000,
-  },
-  show: {
-    y: 0,
-    transition: {
-      type: 'spring',
-      damping: 100,
-      mass: 100,
-      stiffness: 30,
-      //   duration: 5,
-    },
-  },
-}
-
-const fall1 = {
-  hidden: {
-    y: -4000,
-  },
-  show: {
-    y: 0,
-    rotate: [null, 2, -3, 3, -2, 2, 0],
-    transition: {
-      ease: 'easeIn',
-      duration: 12,
-    },
-  },
-}
-
-const fall2 = {
-  hidden: {
-    y: -4000,
-  },
-  show: {
-    y: 0,
-    rotate: [null, -3, 2, -2, 3, -2, 0],
-    transition: {
-      ease: 'easeIn',
-      duration: 12,
-    },
-  },
-}
+// Animations
+import {fallContainer, fall1, fall2, fallSpring1, fallSpring2} from '@/animations/fallingWords.js'
 
 export default function FallingWords({ constraintsRef }) {
   return (
