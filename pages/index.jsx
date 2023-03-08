@@ -10,7 +10,7 @@ import Loader from '@/components/Loader'
 import FallingWords from '@/components/FallingWords'
 
 export default function Home() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   const constraintsRef = useRef(null)
 
