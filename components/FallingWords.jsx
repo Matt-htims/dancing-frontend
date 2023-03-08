@@ -65,7 +65,13 @@ const words = [
 ]
 
 // Animations
-import {fallContainer, fall1, fall2, fallSpring1, fallSpring2} from '@/animations/fallingWords.js'
+import {
+  fallContainer,
+  fall1,
+  fall2,
+  fallSpring1,
+  fallSpring2,
+} from '@/animations/fallingWords.js'
 
 export default function FallingWords({ constraintsRef }) {
   return (
@@ -93,7 +99,7 @@ export default function FallingWords({ constraintsRef }) {
         >
           <p
             className={`$ absolute z-0 text-right text-4xl uppercase bottom-${
-              i < 5 ? 0 : i - 4 < 13 ? i - 4 : 14
+              i < 5 ? 1 : i - 4 < 13 ? i - 4 : 14
             } ${leftMarginValues[randomArrayValue(leftMarginValues)]} ${
               rotateValues[randomArrayValue(rotateValues)]
             } text-${colors[randomArrayValue(colors)]}`}
