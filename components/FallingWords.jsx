@@ -106,28 +106,28 @@ const fallSpring = {
 
 const fall1 = {
   hidden: {
-    y: -3600,
+    y: -4000,
   },
   show: {
     y: 0,
     rotate: [null, 2, -3, 3, -2, 2, 0],
     transition: {
       ease: 'easeIn',
-      duration: 10,
+      duration: 12,
     },
   },
 }
 
 const fall2 = {
   hidden: {
-    y: -3600,
+    y: -4000,
   },
   show: {
     y: 0,
-    rotate: [null, -3, 2, -2, 3, -3, 0],
+    rotate: [null, -3, 2, -2, 3, -2, 0],
     transition: {
       ease: 'easeIn',
-      duration: 10,
+      duration: 12,
     },
   },
 }
