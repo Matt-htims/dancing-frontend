@@ -14,7 +14,7 @@ const letterSVGs = [
 
 export default function PageIntro() {
   return (
-    <div className="relative z-50 flex items-center justify-center bg-main pb-32 pt-[32vh] text-offWhite">
+    <div className="relative z-50 flex items-center justify-center pb-32 pt-[32vh] text-offWhite">
       {/* {letterSVGs.map((letter) => (
         <img
           key={letter}
