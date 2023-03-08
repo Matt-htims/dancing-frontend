@@ -31,14 +31,17 @@ export default function Home() {
             ref={constraintsRef}
             className="bg-gradient-to-b from-main to-black pt-[1000px]"
           >
-            <h2 className="mb-32 text-2xl">
-              We're all just trying to find ways to say,
-              <span className="mt-5 block text-8xl text-main">I love it.</span>
-            </h2>
-            <Form />
+            <div className="box-border flex min-h-[calc(100vh-60px)] flex-col items-center justify-center py-32">
+              <h2 className="relative z-50 mb-32 text-2xl">
+                We're all just trying to find ways to say,
+                <span className="mt-5 block text-8xl text-main">
+                  I love it.
+                </span>
+              </h2>
+              <Form />
+            </div>
             <FallingWords constraintsRef={constraintsRef} />
           </motion.div>
-          <div className="left-[5%] left-[10%] left-[15%] left-[20%] left-[25%] left-[30%] left-[35%] left-[40%] left-[45%] left-[50%] left-[55%] left-[60%] left-[65%] left-[70%] left-[75%] left-[80%] left-[85%] left-[90%] text-blue text-yellow"></div>
         </main>
       )}
     </AnimatePresence>
