@@ -32,7 +32,7 @@ export default function Home() {
             className="bg-gradient-to-b from-main to-black pt-[1000px]"
           >
             <div className="box-border flex min-h-[calc(100vh-60px)] flex-col items-center justify-center py-32">
-              <h2 className="mb-32 text-2xl">
+              <h2 className="relative z-50 mb-32 text-2xl">
                 We're all just trying to find ways to say,
                 <span className="mt-5 block text-8xl text-main">
                   I love it.
