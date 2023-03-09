@@ -85,7 +85,7 @@ export default function FallingWords({ constraintsRef }) {
         <motion.div
           key={i + 1}
           drag
-          //   whileDrag={{ scale: 1.2 }}
+          // whileDrag={{ scale: 1.2 }}
           //   dragConstraints={constraintsRef}
           //   dragSnapToOrigin={true}
           //   dragTransition={{
@@ -98,7 +98,7 @@ export default function FallingWords({ constraintsRef }) {
           className="w-full"
         >
           <p
-            className={`$ absolute z-0 text-right text-4xl uppercase bottom-${
+            className={`$ absolute z-0 text-right text-4xl uppercase hover:cursor-grab active:cursor-grabbing  bottom-${
               i < 5 ? 1 : i - 4 < 13 ? i - 4 : 14
             } ${leftMarginValues[randomArrayValue(leftMarginValues)]} ${
               rotateValues[randomArrayValue(rotateValues)]
