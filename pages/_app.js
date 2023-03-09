@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Splash</title>
+        <title>Dancing</title>
         <meta
           name="description"
           content="You can't drink wine when your mouth is full of objectives."

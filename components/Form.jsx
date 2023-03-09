@@ -77,16 +77,20 @@ export default function Form() {
             whileHover="show"
             className="uppercase"
           >
-            {buttonText.map((letter, i) => (
-              <motion.p
-                className="inline-block"
-                variants={buttonItem}
-                key={i}
-                custom={i}
-              >
-                {letter == 'space' ? <span>&nbsp;</span> : letter}
-              </motion.p>
-            ))}
+            {buttonText.map((letter, i) =>
+              letter != 'space' ? (
+                <motion.p
+                  className="inline-block"
+                  variants={buttonItem}
+                  key={i}
+                  custom={i}
+                >
+                  {letter}
+                </motion.p>
+              ) : (
+                <span key={i}>&nbsp;</span>
+              ),
+            )}
           </motion.button>
         </form>
       </div>
