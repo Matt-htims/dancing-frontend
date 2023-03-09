@@ -19,7 +19,7 @@ const buttonItem = {
   },
   show: {
     opacity: 1,
-    y: [null, 4, -4, 0],
+    y: [null, 3, -3, 0],
     transition: {
       repeat: Infinity,
       // repeatType: 'mirror',
@@ -64,12 +64,13 @@ export default function Form() {
       </div>
       <div>
         <form
-          className="font-base m-auto w-max space-x-5 border-b border-offWhite pb-3 font-bold focus-within:border-b-2 focus-within:pb-[11px] hover:border-b-2 hover:pb-[11px]"
+          className="font-base m-auto w-max space-x-5 border-b border-offWhite pb-3 font-bold"
           action="#"
         >
           <input
-            className="w-80 bg-transparent uppercase outline-none"
+            className="w-80 bg-transparent uppercase outline-none placeholder-offWhite placeholder-opacity-20"
             type="email"
+            placeholder='Enter your email'
           />
           <motion.button
             variants={buttonContainer}
