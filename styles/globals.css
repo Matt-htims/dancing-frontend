@@ -22,5 +22,4 @@ html,
 body {
   font-weight: 700;
   color: var(--offWhite);
-  text-transform: uppercase;
 }
