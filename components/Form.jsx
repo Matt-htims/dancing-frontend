@@ -7,7 +7,7 @@ const buttonContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.04,
+      staggerChildren: 0.05,
     },
   },
 }
@@ -68,15 +68,14 @@ export default function Form() {
           action="#"
         >
           <input
-            className="w-80 bg-transparent uppercase outline-none placeholder-offWhite placeholder-opacity-20"
+            className="w-80 bg-transparent placeholder-offWhite placeholder-opacity-20 outline-none"
             type="email"
-            placeholder='Enter your email'
+            placeholder="Enter your email"
           />
           <motion.button
             variants={buttonContainer}
             initial="hidden"
             whileHover="show"
-            className="uppercase"
           >
             {buttonText.map((letter, i) =>
               letter != 'space' ? (

@@ -1,4 +1,8 @@
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+
+// Custom Hooks
+import useBodyDimensions from '@/hooks/useBodyDimensions'
 
 const colors = ['offWhite', 'secondary', 'blue', 'yellow']
 

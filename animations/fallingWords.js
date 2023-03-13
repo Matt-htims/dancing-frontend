@@ -1,14 +1,12 @@
 export const fallContainer = {
     hidden: {
       opacity: 1,
-      transition: {},
     },
     show: {
       opacity: 1,
       transition: {
         when: 'beforeChildren',
         staggerChildren: 0.3,
-        duration: 0,
       },
     },
   }
